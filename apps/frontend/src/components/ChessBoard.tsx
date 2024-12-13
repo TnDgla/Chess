@@ -97,6 +97,88 @@ export const ChessBoard = memo(
       }
     };
 
+
+    //voice commands for moves of players
+    useEffect(() => {
+      const SpeechRecognition = window.SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (!SpeechRecognition) {
+        console.log("Speech recognition not supported in this browser.");
+        return;
+      }
+  
+      const recognition = new SpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = false;
+      recognition.lang = 'en-US'; 
+  
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript.toLowerCase();
+        console.log("Recognized speech:", transcript);
+        handleVoiceCommand(transcript);
+      };
+  
+      recognition.onerror = (event) => {
+        console.error("Speech recognition error:", event.error);
+      };
+  
+      // Start recognition
+      recognition.start();
+  
+      return () => {
+        recognition.stop(); 
+      };
+    }, []);
+
+    const handleVoiceCommand = (command: string) => {
+      //example command: "move e2 to e4"
+      const regex = /move (\w)(\d) to (\w)(\d)/;
+      const match = command.match(regex);
+      if (match) {
+        const fromSquare = `${match[1]}${match[2]}` as Square;
+        const toSquare = `${match[3]}${match[4]}` as Square;
+  
+        if (isMyTurn && chess.get(fromSquare)?.color === myColor) {
+          try {
+            let moveResult: Move;
+            if (isPromoting(chess, fromSquare, toSquare)) {
+              moveResult = chess.move({
+                from: fromSquare,
+                to: toSquare,
+                promotion: 'q', 
+              });
+            } else {
+              moveResult = chess.move({
+                from: fromSquare,
+                to: toSquare,
+              });
+            }
+            if (moveResult) {
+              moveAudio.play();
+              if (moveResult?.captured) {
+                captureAudio.play();
+              }
+              setMoves((prev) => [...prev, moveResult]);
+              socket.send(
+                JSON.stringify({
+                  type: MOVE,
+                  payload: {
+                    gameId,
+                    move: moveResult,
+                  },
+                })
+              );
+            }
+          } catch (e) {
+            console.log('Error executing move:', e);
+          }
+        } else {
+          console.log("It's not your turn or the selected piece is not yours.");
+        }
+      } else {
+        console.log("Could not understand the command.");
+      }
+    };
+
     useEffect(() => {
       if (myColor === 'b') {
         setIsFlipped(true);
