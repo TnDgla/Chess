@@ -117,10 +117,10 @@ This project is structured to ensure a systematic and incremental development pr
      - **Video:** [React.js Basics](https://www.youtube.com/watch?v=Ke90Tje7VS0)
   2. Implement a drag-and-drop chessboard using third-party libraries.
      - **Reading:** [React DnD Guide](https://react-dnd.github.io/react-dnd/about)
-     - **Video:** [Drag-and-Drop with React](https://www.youtube.com/watch?v=8Wc3ALcXtC0)
+     - **Video:** [Drag-and-Drop with React](https://www.youtube.com/watch?v=uEVHJf30bWI)
   3. Connect the frontend to the WebSocket server.
-     - **Reading:** [WebSocket with React](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Using_WebSockets)
-     - **Video:** [WebSocket Integration](https://www.youtube.com/watch?v=8rmYIPaQ8Rs)
+     - **Reading:** [WebSocket with React](https://ably.com/blog/websockets-react-tutorial)
+     - **Video:** [WebSocket Integration](https://www.youtube.com/watch?v=djMy4QsPWiI&t=664s)
 
 - **Deliverables:**
   - Functional chessboard UI connected to the WebSocket server.
