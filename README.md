@@ -96,13 +96,13 @@ This project is structured to ensure a systematic and incremental development pr
 - **Tasks:**
   1. Initialize a **Node.js** project with WebSocket support.
      - **Reading:** [Node.js Documentation](https://nodejs.org/en/docs/)
-     - **Video:** [WebSocket Basics](https://www.youtube.com/watch?v=1BfCnjr_Vjg)
+     - **Video:** [Nodejs Basics](https://www.youtube.com/watch?v=TlB_eWDSMt4&t=108s)
   2. Implement a basic WebSocket server.
      - **Reading:** [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-     - **Video:** [WebSocket Server Setup](https://www.youtube.com/watch?v=wuhDNG9T3oU)
-  3. Test server-client communication using Postman or Hoppscotch.
-     - **Reading:** [Hoppscotch Guide](https://hoppscotch.io/)
-     - **Video:** [Postman WebSocket Testing](https://www.youtube.com/watch?v=ktD7u0kcv2A)
+     - **Video:** [WebSocket Server Setup](https://www.youtube.com/watch?v=UUddpbgPEJM&t=620s)
+  3. Test server-client communication using Postman.
+     - **Reading:** [Postman Guide](https://www.postman.com/api-platform/api-testing/)
+     - **Video:** [Postman WebSocket Testing](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
 
 - **Deliverables:**
   - Basic WebSocket server with bidirectional communication.
