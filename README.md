@@ -150,13 +150,13 @@ This project is structured to ensure a systematic and incremental development pr
 - **Tasks:**
   1. Store game states in **MongoDB** for persistence.
      - **Reading:** [MongoDB Basics](https://www.mongodb.com/docs/manual/)
-     - **Video:** [MongoDB Tutorial](https://www.youtube.com/watch?v=EE8ZTQxa0AM)
+     - **Video:** [MongoDB Tutorial](https://www.youtube.com/watch?v=J6mDkcqU_ZE&t=129s)
   2. Implement server recovery logic for crash scenarios.
      - **Reading:** [Node.js Crash Recovery](https://nodejs.org/en/docs/guides/)
-     - **Video:** [Handling Server Failures](https://www.youtube.com/watch?v=lqgCUIeDOII)
+     - **Video:** [Handling Server Failures](https://www.youtube.com/watch?v=32M1al-Y6Ag)
   3. Plan for scaling with multiple WebSocket servers.
-     - **Reading:** [Scaling WebSocket Servers](https://ably.com/blog/scaling-websockets)
-     - **Video:** [WebSocket Scalability](https://www.youtube.com/watch?v=LOuwU6h5PCY)
+     - **Reading:** [Scaling WebSocket Servers](https://dyte.io/blog/scaling-websockets-to-millions/)
+     - **Video:** [WebSocket Scalability](https://www.youtube.com/watch?v=UUddpbgPEJM&t=620s)
 
 - **Deliverables:**
   - Scalable and resilient backend.
