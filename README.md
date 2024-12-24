@@ -167,11 +167,11 @@ This project is structured to ensure a systematic and incremental development pr
 - **Goal:** Deploy the application and ensure reliability.
 - **Tasks:**
   1. Test all features using Postman and React Testing Library.
-     - **Reading:** [Postman for API Testing](https://www.postman.com/api-testing/)
+     - **Reading:** [Postman for API Testing](https://learning.postman.com/docs/tests-and-scripts/tests-and-scripts/)
      - **Video:** [React Testing Tutorial](https://www.youtube.com/watch?v=ZmVBCpefQe8)
   2. Deploy the frontend and backend to hosting platforms.
      - **Reading:** [Deploying MERN Apps](https://vercel.com/docs)
-     - **Video:** [MERN Deployment Guide](https://www.youtube.com/watch?v=KKyag6t98g8)
+     - **Video:** [MERN Deployment Guide](https://www.youtube.com/watch?v=22Rywce_kcg&t=61s)
 
 - **Deliverables:**
   - Fully deployed Chess Multiplayer App accessible via public URL.
