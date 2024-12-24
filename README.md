@@ -132,13 +132,13 @@ This project is structured to ensure a systematic and incremental development pr
 - **Tasks:**
   1. Integrate **chess.js** library for move validation.
      - **Reading:** [Chess.js Documentation](https://github.com/jhlywa/chess.js/)
-     - **Video:** [Chess.js Tutorial](https://www.youtube.com/watch?v=HkS2B5TByMg)
+     - **Video:** [Chess.js Tutorial](https://www.youtube.com/watch?v=otKv2pCQw9k)
   2. Implement game state management in the backend.
      - **Reading:** [State Management in Node.js](https://nodejs.dev/learn)
-     - **Video:** [Node.js State Management](https://www.youtube.com/watch?v=xDCKcNBFsuI)
+     - **Video:** [Node.js State Management](https://www.youtube.com/watch?v=brVYqUSEWuw)
   3. Synchronize game state between players in real-time.
      - **Reading:** [Real-Time WebSocket Communication](https://ably.com/websockets)
-     - **Video:** [Real-Time State Synchronization](https://www.youtube.com/watch?v=O6JcOfhHz8k)
+     - **Video:** [Real-Time State Synchronization](https://www.youtube.com/watch?v=UUddpbgPEJM&t=620s)
 
 - **Deliverables:**
   - Real-time chess game with validated moves.
